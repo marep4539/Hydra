@@ -670,10 +670,10 @@ public class BlockPackModule extends ConvertablePackModule<BlockPackModule, Mode
             maxZ = Math.max(maxZ, (float) (center.z() + offsetZ));
         }
         minX = MathUtils.clamp(minX, 0, 1);
-        minY = MathUtils.clamp(minY, 0, 1);
+        minY = MathUtils.clamp(minY, 0, 2);
         minZ = MathUtils.clamp(minZ, 0, 1);
         maxX = MathUtils.clamp(maxX, 0, 1);
-        maxY = MathUtils.clamp(maxY, 0, 1);
+        maxY = MathUtils.clamp(maxY, 0, 2);
         maxZ = MathUtils.clamp(maxZ, 0, 1);
 
         return new BoxComponent(
